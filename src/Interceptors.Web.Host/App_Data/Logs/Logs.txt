@@ -3748,3 +3748,113 @@ INFO  2019-03-28 14:45:38,238 [11   ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2019-03-28 14:45:38,238 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:23000/  0
 INFO  2019-03-28 14:45:38,314 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 82.6131ms 200 
 INFO  2019-03-28 14:45:38,658 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 428.5719ms 404 
+DEBUG 2019-03-28 15:17:35,838 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-03-28 15:17:35,977 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-03-28 15:17:35,995 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.Web.Host.Startup.InterceptorsWebHostModule, Interceptors.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:35,998 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.InterceptorsWebCoreModule, Interceptors.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:35,998 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.InterceptorsApplicationModule, Interceptors.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:35,998 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.InterceptorsCoreModule, Interceptors.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:35,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:35,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:35,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:35,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.EntityFrameworkCore.InterceptorsEntityFrameworkModule, Interceptors.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:36,003 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-03-28 15:17:36,087 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:17:36,087 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:17:36,087 [1    ] o.Configuration.LanguageManagementConfig - Converted Interceptors (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:17:36,087 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:17:36,454 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Interceptors.EntityFrameworkCore.InterceptorsDbContext, Interceptors.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:17:37,540 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-03-28 15:17:37,573 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-03-28 15:17:37,582 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-03-28 15:17:37,588 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Interceptors
+DEBUG 2019-03-28 15:17:37,592 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-03-28 15:17:37,785 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-03-28 15:17:37,823 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-03-28 15:17:37,823 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-03-28 15:17:37,829 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Users.Dto.CreateUserDto
+DEBUG 2019-03-28 15:17:37,829 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Users.Dto.UserDto
+DEBUG 2019-03-28 15:17:37,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-03-28 15:17:37,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-03-28 15:17:37,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Roles.Dto.CreateRoleDto
+DEBUG 2019-03-28 15:17:37,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Roles.Dto.PermissionDto
+DEBUG 2019-03-28 15:17:37,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Roles.Dto.RoleDto
+DEBUG 2019-03-28 15:17:37,831 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-03-28 15:17:37,831 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.MultiTenancy.Dto.TenantDto
+INFO  2019-03-28 15:17:41,958 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DELETE http://localhost:23000/api/services/app/Test/Delete?Id=12  
+INFO  2019-03-28 15:17:41,958 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:23000/  0
+INFO  2019-03-28 15:17:41,958 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:23000/  
+INFO  2019-03-28 15:17:42,026 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-03-28 15:17:42,029 [12   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:23000 does not have permission to access the resource.
+INFO  2019-03-28 15:17:42,052 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.5002ms 200 
+INFO  2019-03-28 15:17:42,425 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 478.3812ms 404 
+INFO  2019-03-28 15:17:50,917 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "Delete", controller = "Test"}. Executing action Interceptors.Tests.TestAppService.Delete (Interceptors.Application)
+INFO  2019-03-28 15:17:50,932 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-03-28 15:17:50,934 [12   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:23000 does not have permission to access the resource.
+INFO  2019-03-28 15:17:51,311 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Interceptors.Tests.TestAppService.Delete (Interceptors.Application) with arguments (Interceptors.Tests.Dtos.DeleteIn) - Validation state: Valid
+INFO  2019-03-28 15:17:51,789 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Interceptors.Tests.TestAppService.Delete (Interceptors.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 474.2863ms.
+INFO  2019-03-28 15:17:51,919 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-03-28 15:17:51,959 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Interceptors.Tests.TestAppService.Delete (Interceptors.Application) in 1036.1565ms
+INFO  2019-03-28 15:17:51,974 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10026.5207ms 200 application/json; charset=utf-8
+DEBUG 2019-03-28 15:24:31,687 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-03-28 15:24:31,810 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-03-28 15:24:31,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.Web.Host.Startup.InterceptorsWebHostModule, Interceptors.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.InterceptorsWebCoreModule, Interceptors.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.InterceptorsApplicationModule, Interceptors.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.InterceptorsCoreModule, Interceptors.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Interceptors.EntityFrameworkCore.InterceptorsEntityFrameworkModule, Interceptors.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:31,834 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-03-28 15:24:31,899 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:24:31,899 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:24:31,899 [1    ] o.Configuration.LanguageManagementConfig - Converted Interceptors (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:24:31,899 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-03-28 15:24:32,189 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Interceptors.EntityFrameworkCore.InterceptorsDbContext, Interceptors.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-03-28 15:24:33,170 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-03-28 15:24:33,206 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-03-28 15:24:33,216 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-03-28 15:24:33,220 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Interceptors
+DEBUG 2019-03-28 15:24:33,225 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-03-28 15:24:33,401 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-03-28 15:24:33,443 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2019-03-28 15:24:33,443 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-03-28 15:24:33,450 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Users.Dto.CreateUserDto
+DEBUG 2019-03-28 15:24:33,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Users.Dto.UserDto
+DEBUG 2019-03-28 15:24:33,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-03-28 15:24:33,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-03-28 15:24:33,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Roles.Dto.CreateRoleDto
+DEBUG 2019-03-28 15:24:33,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Roles.Dto.PermissionDto
+DEBUG 2019-03-28 15:24:33,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.Roles.Dto.RoleDto
+DEBUG 2019-03-28 15:24:33,452 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-03-28 15:24:33,452 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Interceptors.MultiTenancy.Dto.TenantDto
+INFO  2019-03-28 15:24:37,303 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:23000/  
+INFO  2019-03-28 15:24:37,303 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:23000/  0
+INFO  2019-03-28 15:24:37,375 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 77.6457ms 200 
+INFO  2019-03-28 15:24:37,712 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 416.9388ms 404 
+INFO  2019-03-28 15:25:39,861 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DELETE http://localhost:23000/api/services/app/Test/Delete?Id=13  
+INFO  2019-03-28 15:25:39,887 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-03-28 15:25:39,889 [16   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:23000 does not have permission to access the resource.
+INFO  2019-03-28 15:25:47,401 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "Delete", controller = "Test"}. Executing action Interceptors.Tests.TestAppService.Delete (Interceptors.Application)
+INFO  2019-03-28 15:25:47,414 [16   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-03-28 15:25:47,416 [16   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:23000 does not have permission to access the resource.
+INFO  2019-03-28 15:25:47,758 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Interceptors.Tests.TestAppService.Delete (Interceptors.Application) with arguments (Interceptors.Tests.Dtos.DeleteIn) - Validation state: Valid
+INFO  2019-03-28 15:25:48,601 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Interceptors.Tests.TestAppService.Delete (Interceptors.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 838.8053ms.
+INFO  2019-03-28 15:25:48,701 [20   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-03-28 15:25:48,764 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Interceptors.Tests.TestAppService.Delete (Interceptors.Application) in 1337.0642ms
+INFO  2019-03-28 15:25:48,800 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8922.3004ms 200 application/json; charset=utf-8

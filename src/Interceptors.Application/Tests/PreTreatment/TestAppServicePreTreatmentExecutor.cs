@@ -18,24 +18,26 @@ namespace Interceptors.Tests.PreTreatment
         {
             this._repository = pRepository;
         }
-        //public async Task PreTreatment_Delete(DeleteIn pRequest)//async
-        //{
-        //    List<TestPreTreatment> list = await this._repository.GetAll().Where(w => w.TestId == pRequest.Id).ToListAsync();
 
-        //    foreach (TestPreTreatment testPreTreatment in list)
-        //    {
-        //        await this._repository.DeleteAsync(testPreTreatment);
-        //    }
-        //}
-        public void PreTreatment_Delete(DeleteIn pRequest)//async
+        public async Task PreTreatment_Delete(DeleteIn pRequest)//async
         {
-            List<TestPreTreatment> list = this._repository.GetAll().Where(w => w.TestId == pRequest.Id).ToList();
+            List<TestPreTreatment> list = await this._repository.GetAll().Where(w => w.TestId == pRequest.Id).ToListAsync();
 
             foreach (TestPreTreatment testPreTreatment in list)
             {
-                this._repository.Delete(testPreTreatment);
+                await this._repository.DeleteAsync(testPreTreatment);
             }
         }
+
+        //public void PreTreatment_Delete(DeleteIn pRequest)//async
+        //{
+        //    List<TestPreTreatment> list = this._repository.GetAll().Where(w => w.TestId == pRequest.Id).ToList();
+
+        //    foreach (TestPreTreatment testPreTreatment in list)
+        //    {
+        //        this._repository.Delete(testPreTreatment);
+        //    }
+        //}
 
     }
 }

@@ -3858,3 +3858,33 @@ INFO  2019-03-28 15:25:48,601 [24   ] ore.Mvc.Internal.ControllerActionInvoker -
 INFO  2019-03-28 15:25:48,701 [20   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
 INFO  2019-03-28 15:25:48,764 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Interceptors.Tests.TestAppService.Delete (Interceptors.Application) in 1337.0642ms
 INFO  2019-03-28 15:25:48,800 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8922.3004ms 200 application/json; charset=utf-8
+INFO  2019-03-28 15:29:42,041 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DELETE http://localhost:23000/api/services/app/Test/Delete?Id=13  
+INFO  2019-03-28 15:29:42,044 [32   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-03-28 15:29:42,046 [32   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:23000 does not have permission to access the resource.
+INFO  2019-03-28 15:29:42,055 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "Delete", controller = "Test"}. Executing action Interceptors.Tests.TestAppService.Delete (Interceptors.Application)
+INFO  2019-03-28 15:29:42,057 [32   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-03-28 15:29:42,059 [32   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:23000 does not have permission to access the resource.
+INFO  2019-03-28 15:29:42,066 [32   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Interceptors.Tests.TestAppService.Delete (Interceptors.Application) with arguments (Interceptors.Tests.Dtos.DeleteIn) - Validation state: Valid
+ERROR 2019-03-28 15:29:43,843 [36   ] Mvc.ExceptionHandling.AbpExceptionFilter - A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext, however instance members are not guaranteed to be thread safe. This could also be caused by a nested query being evaluated on the client, if this is the case rewrite the query avoiding nested invocations.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext, however instance members are not guaranteed to be thread safe. This could also be caused by a nested query being evaluated on the client, if this is the case rewrite the query avoiding nested invocations.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChanges() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\AbpDbContext.cs:line 208
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChanges() in D:\Github\aspnetboilerplate\src\Abp.ZeroCore.EntityFrameworkCore\Zero\EntityFrameworkCore\AbpZeroCommonDbContext.cs:line 159
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContext(DbContext dbContext) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 163
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChanges() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 60
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUow() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 77
+   at Abp.Domain.Uow.UnitOfWorkBase.Complete() in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkBase.cs:line 256
+   at Abp.Auditing.AuditingHelper.Save(AuditInfo auditInfo) in D:\Github\aspnetboilerplate\src\Abp\Auditing\AuditingHelper.cs:line 135
+   at Abp.Auditing.AuditingInterceptor.SaveAuditInfo(AuditInfo auditInfo, Stopwatch stopwatch, Exception exception, Task task) in D:\Github\aspnetboilerplate\src\Abp\Auditing\AuditingInterceptor.cs:line 111
+   at Abp.Auditing.AuditingInterceptor.<>c__DisplayClass6_0.<PerformAsyncAuditing>b__0(Exception exception) in D:\Github\aspnetboilerplate\src\Abp\Auditing\AuditingInterceptor.cs:line 90
+   at Abp.Threading.InternalAsyncHelper.AwaitTaskWithFinally(Task actualReturnValue, Action`1 finalAction) in D:\Github\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-03-28 15:29:59,760 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-03-28 15:29:59,769 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Interceptors.Tests.TestAppService.Delete (Interceptors.Application) in 17711.8481ms
+INFO  2019-03-28 15:29:59,772 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17731.019ms 500 application/json; charset=utf-8
